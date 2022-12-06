@@ -1,0 +1,8 @@
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\bin\Debug\ThucHanh04-ADO.exe.config
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\bin\Debug\ThucHanh04-ADO.exe
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\bin\Debug\ThucHanh04-ADO.pdb
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\obj\Debug\ThucHanh04-ADO.csproj.AssemblyReference.cache
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\obj\Debug\ThucHanh04-ADO.csproj.SuggestedBindingRedirects.cache
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\obj\Debug\ThucHanh04-ADO.csproj.CoreCompileInputs.cache
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\obj\Debug\ThucHanh04-ADO.exe
+D:\ASC\ADO-EntityFrameWork\ThucHanh04-ADO\obj\Debug\ThucHanh04-ADO.pdb

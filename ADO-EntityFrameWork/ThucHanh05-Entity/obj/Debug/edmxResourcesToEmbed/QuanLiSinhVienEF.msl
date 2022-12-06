@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLiSinhVienModelStoreContainer" CdmEntityContainer="QuanLiSinhVien">
+    <EntitySetMapping Name="TBLDeTais">
+      <EntityTypeMapping TypeName="QuanLiSinhVienModel.TBLDeTai">
+        <MappingFragment StoreEntitySet="TBLDeTai">
+          <ScalarProperty Name="Madt" ColumnName="Madt" />
+          <ScalarProperty Name="Tendt" ColumnName="Tendt" />
+          <ScalarProperty Name="Kinhphi" ColumnName="Kinhphi" />
+          <ScalarProperty Name="Noithuctap" ColumnName="Noithuctap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLGiangViens">
+      <EntityTypeMapping TypeName="QuanLiSinhVienModel.TBLGiangVien">
+        <MappingFragment StoreEntitySet="TBLGiangVien">
+          <ScalarProperty Name="Magv" ColumnName="Magv" />
+          <ScalarProperty Name="Hotengv" ColumnName="Hotengv" />
+          <ScalarProperty Name="Luong" ColumnName="Luong" />
+          <ScalarProperty Name="Makhoa" ColumnName="Makhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHuongDans">
+      <EntityTypeMapping TypeName="QuanLiSinhVienModel.TBLHuongDan">
+        <MappingFragment StoreEntitySet="TBLHuongDan">
+          <ScalarProperty Name="Masv" ColumnName="Masv" />
+          <ScalarProperty Name="Madt" ColumnName="Madt" />
+          <ScalarProperty Name="Magv" ColumnName="Magv" />
+          <ScalarProperty Name="KetQua" ColumnName="KetQua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLKhoas">
+      <EntityTypeMapping TypeName="QuanLiSinhVienModel.TBLKhoa">
+        <MappingFragment StoreEntitySet="TBLKhoa">
+          <ScalarProperty Name="Makhoa" ColumnName="Makhoa" />
+          <ScalarProperty Name="Tenkhoa" ColumnName="Tenkhoa" />
+          <ScalarProperty Name="Dienthoai" ColumnName="Dienthoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLSinhViens">
+      <EntityTypeMapping TypeName="QuanLiSinhVienModel.TBLSinhVien">
+        <MappingFragment StoreEntitySet="TBLSinhVien">
+          <ScalarProperty Name="Masv" ColumnName="Masv" />
+          <ScalarProperty Name="Hotensv" ColumnName="Hotensv" />
+          <ScalarProperty Name="Makhoa" ColumnName="Makhoa" />
+          <ScalarProperty Name="Namsinh" ColumnName="Namsinh" />
+          <ScalarProperty Name="Quequan" ColumnName="Quequan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

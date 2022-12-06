@@ -1,0 +1,13 @@
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\obj\Debug\ThucHanh05-Entity.csproj.AssemblyReference.cache
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\obj\Debug\ThucHanh05-Entity.csproj.SuggestedBindingRedirects.cache
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\obj\Debug\ThucHanh05-Entity.csproj.CoreCompileInputs.cache
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\ThucHanh05-Entity.exe.config
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\ThucHanh05-Entity.exe
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\ThucHanh05-Entity.pdb
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\EntityFramework.dll
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\EntityFramework.xml
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\obj\Debug\ThucHanh05-Entity.csproj.CopyComplete
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\obj\Debug\ThucHanh05-Entity.exe
+D:\ASC\ADO-EntityFrameWork\ThucHanh05-Entity\obj\Debug\ThucHanh05-Entity.pdb

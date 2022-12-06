@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLiSinhVienModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBLDeTai">
+    <Key>
+      <PropertyRef Name="Madt" />
+    </Key>
+    <Property Name="Madt" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Tendt" Type="char" MaxLength="30" />
+    <Property Name="Kinhphi" Type="int" />
+    <Property Name="Noithuctap" Type="char" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TBLGiangVien">
+    <Key>
+      <PropertyRef Name="Magv" />
+    </Key>
+    <Property Name="Magv" Type="int" Nullable="false" />
+    <Property Name="Hotengv" Type="char" MaxLength="30" />
+    <Property Name="Luong" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="Makhoa" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBLHuongDan">
+    <Key>
+      <PropertyRef Name="Masv" />
+    </Key>
+    <Property Name="Masv" Type="int" Nullable="false" />
+    <Property Name="Madt" Type="char" MaxLength="10" />
+    <Property Name="Magv" Type="int" />
+    <Property Name="KetQua" Type="decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLKhoa">
+    <Key>
+      <PropertyRef Name="Makhoa" />
+    </Key>
+    <Property Name="Makhoa" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Tenkhoa" Type="char" MaxLength="30" />
+    <Property Name="Dienthoai" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBLSinhVien">
+    <Key>
+      <PropertyRef Name="Masv" />
+    </Key>
+    <Property Name="Masv" Type="int" Nullable="false" />
+    <Property Name="Hotensv" Type="char" MaxLength="40" />
+    <Property Name="Makhoa" Type="char" MaxLength="10" />
+    <Property Name="Namsinh" Type="int" />
+    <Property Name="Quequan" Type="char" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK__TBLGiangV__Makho__267ABA7A">
+    <End Role="TBLKhoa" Type="Self.TBLKhoa" Multiplicity="0..1" />
+    <End Role="TBLGiangVien" Type="Self.TBLGiangVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLKhoa">
+        <PropertyRef Name="Makhoa" />
+      </Principal>
+      <Dependent Role="TBLGiangVien">
+        <PropertyRef Name="Makhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TBLHuongDa__Madt__2E1BDC42">
+    <End Role="TBLDeTai" Type="Self.TBLDeTai" Multiplicity="0..1" />
+    <End Role="TBLHuongDan" Type="Self.TBLHuongDan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDeTai">
+        <PropertyRef Name="Madt" />
+      </Principal>
+      <Dependent Role="TBLHuongDan">
+        <PropertyRef Name="Madt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TBLHuongDa__Magv__2F10007B">
+    <End Role="TBLGiangVien" Type="Self.TBLGiangVien" Multiplicity="0..1" />
+    <End Role="TBLHuongDan" Type="Self.TBLHuongDan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLGiangVien">
+        <PropertyRef Name="Magv" />
+      </Principal>
+      <Dependent Role="TBLHuongDan">
+        <PropertyRef Name="Magv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TBLSinhVi__Makho__29572725">
+    <End Role="TBLKhoa" Type="Self.TBLKhoa" Multiplicity="0..1" />
+    <End Role="TBLSinhVien" Type="Self.TBLSinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLKhoa">
+        <PropertyRef Name="Makhoa" />
+      </Principal>
+      <Dependent Role="TBLSinhVien">
+        <PropertyRef Name="Makhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuanLiSinhVienModelStoreContainer">
+    <EntitySet Name="TBLDeTai" EntityType="Self.TBLDeTai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLGiangVien" EntityType="Self.TBLGiangVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHuongDan" EntityType="Self.TBLHuongDan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLKhoa" EntityType="Self.TBLKhoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLSinhVien" EntityType="Self.TBLSinhVien" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__TBLGiangV__Makho__267ABA7A" Association="Self.FK__TBLGiangV__Makho__267ABA7A">
+      <End Role="TBLKhoa" EntitySet="TBLKhoa" />
+      <End Role="TBLGiangVien" EntitySet="TBLGiangVien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TBLHuongDa__Madt__2E1BDC42" Association="Self.FK__TBLHuongDa__Madt__2E1BDC42">
+      <End Role="TBLDeTai" EntitySet="TBLDeTai" />
+      <End Role="TBLHuongDan" EntitySet="TBLHuongDan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TBLHuongDa__Magv__2F10007B" Association="Self.FK__TBLHuongDa__Magv__2F10007B">
+      <End Role="TBLGiangVien" EntitySet="TBLGiangVien" />
+      <End Role="TBLHuongDan" EntitySet="TBLHuongDan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TBLSinhVi__Makho__29572725" Association="Self.FK__TBLSinhVi__Makho__29572725">
+      <End Role="TBLKhoa" EntitySet="TBLKhoa" />
+      <End Role="TBLSinhVien" EntitySet="TBLSinhVien" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
